@@ -1,0 +1,663 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNahQuXGW4Kq8CjRN2rxXko",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/j99900ch/-PROJECT-Cause-of-death-/blob/main/Assignment%201%20basic%20python%20questions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "IIX_zZ0WkeNq"
+      },
+      "outputs": [],
+      "source": [
+        "1) Write a Python program that takes a number as input and checks whether the number is:\n",
+        "● Positive\n",
+        "● Negative\n",
+        "● Zero\n",
+        "Example:\n",
+        "Input: -5\n",
+        "Output: Negative Number"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = float(input(\"Enter a number: \"))\n",
+        "\n",
+        "#Check the condition of the number\n",
+        "if number > 0 :\n",
+        "  print(\"Positive Number\")\n",
+        "elif number < 0:\n",
+        "  print(\"Negative Number\")\n",
+        "else:\n",
+        "  print(\"Zero\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "imwLUqAvkjSB",
+        "outputId": "553d94d2-c850-479d-b687-14803624442c"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: -5\n",
+            "Negative Number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "2) Write a Python program that checks whether a given number is even or odd.\n",
+        "Example:\n",
+        "Input: 14\n",
+        "Output: Even Number"
+      ],
+      "metadata": {
+        "id": "RIIOKsWYlOlm"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "# Check if the number is divisible by 2\n",
+        "if number % 2 == 0:\n",
+        "  print(\"Even Number\")\n",
+        "else:\n",
+        "  print(\"odd Number\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ourc9z8hlYUN",
+        "outputId": "fc6784cf-3c06-40dd-d231-63f700e47375"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 14\n",
+            "Even Number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "3) Write a Python program that takes two numbers as input and prints the greater number.\n",
+        "Example:\n",
+        "Input: 10, 25\n",
+        "Output: 25 is greater"
+      ],
+      "metadata": {
+        "id": "y1HMaU7RlYjN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1 = float(input(\"Enter first number\"))\n",
+        "num2 = float(input(\"Enter second number\"))\n",
+        "\n",
+        "if num1 > num2:\n",
+        "  print(f\"{num1} is greater\")\n",
+        "elif num2 > num1:\n",
+        "  print(f\"{num2} is greater\")\n",
+        "else:\n",
+        "  print(\"Both numbers are equal\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ltW5yZnVlYwV",
+        "outputId": "e3ea3ddc-0c72-468b-c882-b4cda571cb35"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number10\n",
+            "Enter second number25\n",
+            "25.0 is greater\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "4) Write a Python program to check if a person is eligible for voting.\n",
+        "\n",
+        "Condition:\n",
+        "● If age is 18 or more, print \"Eligible for voting\"\n",
+        "● Otherwise, print \"Not eligible for voting\"\n",
+        "Example:\n",
+        "Input: 16\n",
+        "Output: Not eligible for voting"
+      ],
+      "metadata": {
+        "id": "qzFq-zsdoy4g"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"Enter your age: \"))\n",
+        "\n",
+        "if age >=18:\n",
+        "  print(\"Eligible for voting\")\n",
+        "else:\n",
+        "  print(\"Not eligible for voting\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r9_R8IyCqd1d",
+        "outputId": "204aa954-825f-4661-9505-fff0788fed17"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age: 16\n",
+            "Not eligible for voting\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "5) Write a Python program that checks:\n",
+        "● If a number is divisible by both 3 and 5, print \"Divisible by both\"\n",
+        "● If divisible by only 3, print \"Divisible by 3\"\n",
+        "● If divisible by only 5, print \"Divisible by 5\"\n",
+        "● Otherwise, print \"Not divisible by 3 or 5\"\n",
+        "Example:\n",
+        "Input: 15\n",
+        "Output: Divisible by both"
+      ],
+      "metadata": {
+        "id": "1OnDuJ01qd5k"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = int(input(\"Enter a number: \"))\n",
+        "\n",
+        " # Check the conditions\n",
+        "\n",
+        "if number % 3 === 0 and number % 5 == 0:\n",
+        "  print(\"Divisible by both\")\n",
+        "elif number % 3 == 0:\n",
+        "  print(\"Divisible by 3\")\n",
+        "elif number % 5 == 0:\n",
+        "  print(\"Divisible by 5\")\n",
+        "else:\n",
+        "  print(\"Not divisible by 3 or 5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "hBS-5Tfiqd85",
+        "outputId": "840ab9f8-d741-4bbf-cbe0-31c36655246d"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (3465855230.py, line 5)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_834/3465855230.py\"\u001b[0;36m, line \u001b[0;32m5\u001b[0m\n\u001b[0;31m    if number % 3 === 0 and number % 5 == 0:\u001b[0m\n\u001b[0m                    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "# Check the conditions\n",
+        "if number % 3 == 0 and number % 5 == 0:\n",
+        "    print(\"Divisible by both\")\n",
+        "elif number % 3 == 0:\n",
+        "    print(\"Divisible by 3\")\n",
+        "elif number % 5 == 0:\n",
+        "    print(\"Divisible by 5\")\n",
+        "else:\n",
+        "    print(\"Not divisible by 3 or 5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9HljTRxDoy8l",
+        "outputId": "826cc1ef-056f-4ae2-8af6-5e6ccdf617c2"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 15\n",
+            "Divisible by both\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "6) Write a Python program to find the largest number among three numbers using nested\n",
+        "if-else.\n",
+        "Example:\n",
+        "Input: 15, 42, 30\n",
+        "Output: 42 is the largest number"
+      ],
+      "metadata": {
+        "id": "GS_kn0wTozAB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "num3 = float(input(\"Enter third number: \"))\n",
+        "\n",
+        "#Nested if-else logic to find the largest number\n",
+        "if num1 >= num2:\n",
+        "  if num2 > num3:\n",
+        "    largest = num1\n",
+        "  else:\n",
+        "    largest = num3\n",
+        "else:\n",
+        "  if num2 > num3:\n",
+        "    largest = num2\n",
+        "  else:\n",
+        "    largest = num3\n",
+        "# Print the result\n",
+        "print(f\"{largest} is the largest number\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qI-volqqozDj",
+        "outputId": "32f0baea-7794-4f28-a9b6-1009127fdaf4"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 15\n",
+            "Enter second number: 42\n",
+            "Enter third number: 30\n",
+            "42.0 is the largest number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "7) Write a Python program to calculate grades based on marks.\n",
+        "\n",
+        "Conditions:\n",
+        "● 90 or above → Grade A\n",
+        "● 75 to 89 → Grade B\n",
+        "● 50 to 74 → Grade C\n",
+        "● Below 50 → Fail\n",
+        "Example:\n",
+        "Input: 82\n",
+        "Output: Grade B"
+      ],
+      "metadata": {
+        "id": "9vZJhVeNwP8l"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks = float(int(input(\"Enter student marks: \")))\n",
+        " # Checks the conditions sequentally from higher\n",
+        "\n",
+        "if marks >= 90:\n",
+        "  print(\"Grade A\")\n",
+        "elif marks >= 75:\n",
+        "  print(\"Grade B\")\n",
+        "elif marks >=50:\n",
+        "  print(\"Grade C\")\n",
+        "else:\n",
+        "  print(\"Fail\")"
+      ],
+      "metadata": {
+        "id": "8QbadruiwP_-",
+        "outputId": "0de8e334-e4a8-41c0-a5a4-520493acceff",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter student marks: 80\n",
+            "Grade B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "8) Write a Python program for ATM withdrawal.\n",
+        "Conditions:\n",
+        "● If balance is sufficient:\n",
+        "○ Check if withdrawal amount is a multiple of 100\n",
+        "○ If yes → \"Transaction Successful\"\n",
+        "○ Else → \"Enter amount in multiples of 100\"\n",
+        "● If insufficient balance → \"Insufficient Balance\"\n",
+        "Example:\n",
+        "Balance: 5000\n",
+        "Withdraw Amount: 1200\n",
+        "Output: Transaction Successful"
+      ],
+      "metadata": {
+        "id": "AwisbRWlwQIL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "balance = 5000\n",
+        "#starting balance\n",
+        "withdraw_amount = int(input(\"Enter amount in withdraw: \"))\n",
+        "\n",
+        "#Let Check if the user has enough money in their account\n",
+        "if withdraw_amount <= balance:\n",
+        "  # ensure that the balance amount should be multiple of 100\n",
+        "  if withdraw_amount % 100 == 0:\n",
+        "    print(\"Transaction Successful\")\n",
+        "  else:\n",
+        "    print(\"Enter amount in multiples of 100\")\n",
+        "else:\n",
+        "  # withdraw_amount >= balance # is not multiples of 100\n",
+        "  print(\"Insufficient balance\")"
+      ],
+      "metadata": {
+        "id": "d12por5s2r5H",
+        "outputId": "a2f26271-8a19-445b-c9db-0cd5e313946c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter amount in withdraw: 1200\n",
+            "Transaction Successful\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "9) Write a Python program to check login credentials.\n",
+        "Conditions:\n",
+        "● Correct username: \"admin\"\n",
+        "● Correct password: \"python123\"\n",
+        "\n",
+        "If both are correct → \"Login Successful\"\n",
+        "Otherwise → \"Invalid Username or Password\""
+      ],
+      "metadata": {
+        "id": "y_t7PQ92yNf6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#take username and password input from the User\n",
+        "username = input(\"Enter username: \")\n",
+        "password = input(\"Enter password: \")\n",
+        "\n",
+        "# Check if both credentials match the required values:\n",
+        "if username == \"admin\" and password == \"python123\":\n",
+        "  print(\"Login successful\")\n",
+        "else:\n",
+        "  print(\"Invalid username or password\")\n"
+      ],
+      "metadata": {
+        "id": "ZaeX_U75yNi8",
+        "outputId": "a377c9f2-ea4f-4978-bb41-c7cf5059bdc8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter username: admin\n",
+            "Enter password: python123\n",
+            "Login successful\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "10) Write a Python program to calculate ticket price based on age.\n",
+        "Conditions:\n",
+        "● Age less than 5 → Free ticket\n",
+        "● Age between 5 and 18 → ₹100\n",
+        "● Age between 19 and 60 → ₹200\n",
+        "● Above 60 → ₹150 (senior citizen discount)\n",
+        "Example:\n",
+        "Input: 65\n",
+        "Output: Ticket Price = ₹150"
+      ],
+      "metadata": {
+        "id": "wWyFoDkFyNl7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#take the input from the user and convert it into interger\n",
+        "age = int(input(\"Enter age: \"))\n",
+        "\n",
+        "#Check the age conditions to determine the ticket price\n",
+        "if age <= 5:\n",
+        "  ticket_price = 0\n",
+        "  print(\"Free ticket\")\n",
+        "elif 5 <= age <=18:\n",
+        "  ticket_price = 100\n",
+        "  print(f\"ticket_price = rs{ticket_price}\")\n",
+        "elif 19 <= age <= 60:\n",
+        "  ticket_price = 200\n",
+        "  print(f\"ticket_price = rs{ticket_price}\")\n",
+        "elif age >= 60:\n",
+        "  ticket_price = 150\n",
+        "  print(f\"ticket_price = rs{ticket_price}\")\n"
+      ],
+      "metadata": {
+        "id": "XaltaD_c4Fqu",
+        "outputId": "44bc8697-9caa-4ec3-fc9e-51f827640e80",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter age: 65\n",
+            "ticket_price = rs150\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "x-cK5F9a4Fud"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "22KGbflC4Fye"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "aal-IteuyNpg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "fSjEsCRnyOLd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7h1zSxcuyOO_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "fjn8mEO_yOSk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "W20vM7OeyOeQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "yOORtAV2wQPr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "zOLs3CN8wQTL"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
